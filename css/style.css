@@ -1,0 +1,129 @@
+    .body{
+    background-color: #282828;
+    letter-spacing: 2px;
+    font-family: 'Open Sans', sans-serif;
+    }
+    
+    .center{
+        display: flex;
+        justify-content: center;
+    }
+    
+    .margin-top{
+        margin-top: 80px;
+    }
+
+    .margin-top-small{
+        margin-top: 60px;
+    }
+    .margin-top-small2{
+        margin-top: 35px;
+    }
+
+    .margin-bottom{
+        margin-bottom: 50px;
+    }
+    
+    .timer{
+        font-size: 60px;
+        color: white;
+    }
+
+    .startButton{
+        display: flex;
+        justify-content: center;
+    }
+
+    .headline{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        color: white;
+        font-size: large;
+    }
+
+    section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        min-height: 40vh;
+    }
+
+    .ss1{
+        display: flex;
+    }
+
+    .ss2{
+        display: none;
+    }
+
+    .ss3{
+        display: none;
+    }
+
+    .ss4{
+        display: none;
+    }
+
+    .btn{
+        width: 220px;
+        height: 70px;
+        border: none;
+        color: white;
+        font-size: larger;
+        background-color: rgba(255, 0, 68, 0.9);
+        border-radius: 14px;
+        margin-top: 30px;
+    }
+
+    .popup .overlay{
+        display: none;
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        width: 100vW;
+        height: 100vh;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: 1;
+    }
+
+    .popup .content{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate( -50%, -50%) scale(0);
+        background: rgba(255, 0, 68, 1);
+        color: white;
+        border-radius: 14px;
+        width: 260px;
+        height: 110px;
+        z-index: 2;
+        text-align: center;
+        padding: 5px;
+        box-sizing: border-box;
+    }
+
+    .popup .close-btn{
+        position: absolute;
+        right: 5px;
+        top: 5px;
+        width: 10px;
+        height: 10px;
+        background: #28282800;
+        color: white;
+        font-size: 5px;
+        font-weight: 600;
+        line-height: 5px;
+        text-align: center;
+        border-radius: 50%;
+    }
+
+    .popup.active .overlay{
+        display: block;
+    }
+
+    .popup.active .content{
+        transition: all 300ms ease-in-out;
+        transform: translate( -50%, -50%) scale(1);
+    }

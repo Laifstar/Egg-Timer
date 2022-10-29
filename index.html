@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="manifest" href="manifest.json">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap" rel="stylesheet"> 
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <title>Eieruhr</title>
+</head>
+
+<body class="body">
+
+    <script src="js/script.js"></script>
+
+    <div>
+        <img onclick="home()" src="img/menu.png">
+    </div>
+    
+    <div id="h1" class="ss1 headline margin-top-small">Wie magst du deine Eier?</div>
+    <div id="h2" class="ss2 headline margin-top-small">Wie groß sind deine Eier?</div>
+    <div id="h3" class="ss3 headline margin-top-small2">Welche Temperatur haben deine Eier?</div>
+    <div id="h4" class="ss4 headline margin-top-small2">Gib deine Eier in kochendes Wasser und starte den Timer!</div>
+
+    <div class="center margin-top-small margin-bottom">
+        <img src="img/egg.png">
+    </div>
+
+    <section class="ss1" id="s1">
+        <button onclick="eiWeich()" class="btn" id="btna11">weich</button>
+        <button onclick="eiWachsweich()" class="btn" id="btna12">wachsweich</button>
+        <button onclick="eiHart()" class="btn" id="btna13">hart</button>
+    </section>
+
+    <section class="ss2" id="s2">
+        <button onclick="eiS()" class="btn" id="btna21">S</button>
+        <button onclick="eiM()" class="btn" id="btna22">M</button>
+        <button onclick="eiL()" class="btn" id="btna23">L</button>
+    </section>
+
+    <section class="ss3" id="s3">
+        <button onclick="fridge()" class="btn" id="btna31">Kühlschrank</button>
+        <button onclick="room()" class="btn" id="btna32">Zimmertemperatur</button>
+    </section>
+  
+    <section class="ss4" id="s4">
+        <div class="timer" id="countdown">06:00</div>
+        <button onclick="startTimer()" class="btn" id="btna41">Start</button></div>
+        <button onclick="resetStartTimer()" class="btn" id="btna42">Reset</button></div>
+    </section>
+
+    <div class="popup" id="popup-1">
+        <div class="overlay" onclick="home()"></div>
+        <div class="content" onclick="home()">
+            <h3>Bitte stoppe zuerst den Timer</h3>
+        </div>
+    </div>
+
+ 
+
+</body>
+</html>
